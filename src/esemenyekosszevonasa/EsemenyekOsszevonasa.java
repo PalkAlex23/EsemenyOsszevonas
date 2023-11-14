@@ -20,6 +20,8 @@ public class EsemenyekOsszevonasa extends javax.swing.JFrame {
     
     public EsemenyekOsszevonasa() {
         initComponents();
+        osszeg = 0;
+        jTextField1.setText(osszeg + " Ft");
     }
 
     /**

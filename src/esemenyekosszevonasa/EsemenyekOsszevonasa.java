@@ -21,7 +21,7 @@ public class EsemenyekOsszevonasa extends javax.swing.JFrame {
     public EsemenyekOsszevonasa() {
         initComponents();
         osszeg = 0;
-        jTextField1.setText(osszeg + " Ft");
+        frissit();
     }
 
     /**
@@ -111,7 +111,7 @@ public class EsemenyekOsszevonasa extends javax.swing.JFrame {
             osszeg -= 200;
         }
         
-        jTextField1.setText(osszeg + " Ft");
+        frissit();
     }//GEN-LAST:event_osszesito
 
     /**
@@ -147,6 +147,10 @@ public class EsemenyekOsszevonasa extends javax.swing.JFrame {
                 new EsemenyekOsszevonasa().setVisible(true);
             }
         });
+    }
+    
+    private void frissit() {
+        jTextField1.setText(osszeg + " Ft");
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
